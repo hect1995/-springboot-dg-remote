@@ -1,0 +1,7 @@
+com/example/springboot/Application.class
+com/example/springboot/config/PokemonSchema.class
+com/example/springboot/config/InfinispanConfiguration.class
+com/example/springboot/repository/PokemonService.class
+com/example/springboot/data/Pokemon.class
+com/example/springboot/repository/PokemonServiceProtoImpl.class
+com/example/springboot/controller/HelloController.class
