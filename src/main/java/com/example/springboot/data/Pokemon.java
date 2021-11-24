@@ -16,7 +16,7 @@ import java.io.Serializable;
 @Setter
 public class Pokemon implements Serializable {
 
-   @ProtoField(number = 1)
+   @ProtoField(number = 1, defaultValue = "-1")
    int id;
   
    @ProtoField(number = 2)

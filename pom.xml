@@ -42,6 +42,11 @@
 
 	<dependencies>
 	    <dependency>
+	      <groupId>org.infinispan.protostream</groupId>
+	      <artifactId>protostream-processor</artifactId>
+	      <scope>provided</scope>
+	    </dependency>
+	    <dependency>
 			<groupId>org.infinispan</groupId>
 			<artifactId>infinispan-spring-boot-starter-remote</artifactId>
             <version>${version.infinispan}</version>
