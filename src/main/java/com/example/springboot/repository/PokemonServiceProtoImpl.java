@@ -32,8 +32,8 @@ public class PokemonServiceProtoImpl implements PokemonService {
     }
 
     @Override
-    public Pokemon insert(int id, Pokemon book){
-        return pokemonCache.put(id, book);
+    public Pokemon insert(int id, Pokemon pokemon){
+        return pokemonCache.put(id, pokemon);
     }
 
     @Override
