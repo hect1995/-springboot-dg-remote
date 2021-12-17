@@ -14,8 +14,8 @@ import com.example.springboot.data.Pokemon;
 import com.example.springboot.repository.PokemonService;
 import com.example.springboot.repository.PokemonServiceProtoImpl;
 
-@RestController
-@RequestMapping("proto")
+@RestController //  esta clase se expone
+@RequestMapping("proto") // el path donde se expone esta clase es proto. To access this service localhost:8080/api/proto
 public class HelloController {
 	
 	//private final RemoteCacheManager cacheManager;
