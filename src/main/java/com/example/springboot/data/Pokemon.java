@@ -17,13 +17,13 @@ import java.io.Serializable;
 public class Pokemon implements Serializable {
 
    @ProtoField(number = 1, defaultValue = "-1")
-   int id;
+   public int id;
   
    @ProtoField(number = 2)
-   String pokemon;
+   public String pokemon;
 
    @ProtoField(number = 3)
-   String type;
+   public String type;
 
    public Pokemon() {
 

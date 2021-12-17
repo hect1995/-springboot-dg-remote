@@ -1,5 +1,7 @@
 package com.example.springboot.config;
 
+import java.net.URI;
+
 import org.infinispan.commons.marshall.ProtoStreamMarshaller;
 import org.infinispan.spring.starter.remote.InfinispanRemoteCacheCustomizer;
 import org.springframework.context.annotation.Bean;
@@ -15,9 +17,7 @@ public class InfinispanConfiguration {
    public InfinispanRemoteCacheCustomizer caches() {
       return b -> {
          b.remoteCache("pokemon")
-                 .configuration("<distributed-cache name=pokemon>" +
-                         "<encoding media-type=\"application/x-protostream\"/>" +
-                         "</distributed-cache>");
+                 .configurationURI(URI.create("pokemonCacheConfig.xml"));
 
          b.remoteCache("pokemon").marshaller(ProtoStreamMarshaller.class);
 

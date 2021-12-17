@@ -51,7 +51,7 @@ public class AppConfiguration {
 ////        Path protoPath = Paths.get(RemoteQuery.class.getClassLoader().getResource("proto/book.proto").toURI());
 ////        String proto = Files.readString(protoPath);
 //
-//        Path path = Paths.get(AppConfiguration.class.getClassLoader().getResource("proto/book.proto").toURI());
+	//        Path path = Paths.get(AppConfiguration.class.getClassLoader().getResource("proto/book.proto").toURI());
 //        String proto = Files.readString(path);
 //
 //        logger.debug("--> Proto schema: " + System.lineSeparator() + proto + System.lineSeparator());
